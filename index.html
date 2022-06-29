@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de scroll</title>
+    <link rel="stylesheet" href="css/scroll.css">
+</head>
+<body>
+    <nav class="links">
+        <label for="rd_principal">Principal</label>
+        <label for="rd_evento">Evento</label>
+        <label for="rd_programacao">Programação</label>
+        <label for="rd_cronograma">Cronograma</label>
+        <label for="rd_contato">Contato</label>
+        <label for="rd_cosplayer">Cosplayer</label>
+    </nav>
+    <div class="scroll">
+        <input type="radio" name="grupo" id="rd_principal" checked="true">
+        <input type="radio" name="grupo" id="rd_evento">
+        <input type="radio" name="grupo" id="rd_programacao">
+        <input type="radio" name="grupo" id="rd_cronograma">
+        <input type="radio" name="grupo" id="rd_contato">
+        <input type="radio" name="grupo" id="rd_cosplayer">
+
+        <section class="sections">
+            <section class="bloco" id="principal">
+                <img src="imgs/Gki 2021.PNG">
+                <img src="imgs/Gki 2020.png">
+                <img src="imgs/Gki 2019.png">
+                <img src="imgs/Gki 2018.png">
+                <img src="imgs/GKi 2017.png">
+            </section>
+            <section class="bloco" id="evento"><img src="imgs/Flyer_Geek_Fest.jpg"></section>
+            <section class="bloco" id="programacao"><img src="imgs/MASCOTE_ATUALIZADO.png"></section>
+            <section class="bloco" id="cronograma"><img src="imgs/capa_panfleto_geekfest.jpg"></section>
+            <section class="bloco" id="contato"><img src="imgs/dentro_panfleto_geekfest.jpg"></section>
+            <section class="bloco" id="cosplayer"><img src="imgs/IMG_2144.PNG"></section>
+        </section>
+    </div>
+</body>
+</html>

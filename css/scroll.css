@@ -1,0 +1,91 @@
+@font-face {
+    font-family: fontegeek;
+    src: url(font/BADABB.TTF) ;
+
+}
+*{margin: 0;padding: 0; }
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    
+}
+
+.links label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor:pointer;
+    transition: all .4s;
+    text-align: center;    
+    /*font-family: fontegeek;*/
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #fff;
+}
+
+.links label:hover{ background-color: rgba(255,255,255,.2);}
+.scroll{
+    display: flex;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    
+}
+
+.sections{ transition: all .4s;}
+
+input{ display: none;}
+
+.bloco{
+    width: 100vw; height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contato{
+    background-color: #7fbd42;
+}       #contato img{  height: 100vh;width: auto;}
+#programacao{
+	background-color: #69f;
+    background-image: url(imgs/g2017.png);
+    background-position: left;
+    background-size: 300px;
+    background-repeat: no-repeat;
+} 
+        #programacao img{  height: 100vh;width: auto;}
+
+#evento{
+	background-color: #faa;
+}       #evento img{ height: 100vh;width: auto;}
+#cronograma{
+	background-color: rgb(218, 119, 27);
+} #cronograma img{  height: 100vh;width: auto;}
+#principal{
+	background-color: #aaa;
+}
+#cosplayer{
+	background-color: #414950;
+} #cosplayer img{  height: 100vh;width: auto;}
+
+#rd_evento:checked ~ .sections{
+    margin-top: -100vh;
+}
+
+#rd_programacao:checked ~ .sections{
+    margin-top: -200vh;
+}
+#rd_cronograma:checked ~ .sections{
+    margin-top: -300vh;
+}
+#rd_contato:checked ~ .sections{
+    margin-top: -400vh;
+}
+#rd_cosplayer:checked ~ .sections{
+    margin-top: -500vh;
+    background-color: grey;
+}
+.bloco img{ width: 200px;}
+
